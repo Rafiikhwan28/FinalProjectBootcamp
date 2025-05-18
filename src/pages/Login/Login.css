@@ -1,0 +1,84 @@
+/* Halaman Login */
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #3b82f6;
+  background-image: url('https://travel-journal-api-bootcamp.do.dibimbing.id/images/1732417825813-indo.jpg'); /* Ganti dengan path gambar Anda */
+  background-size: cover; /* Menyesuaikan gambar dengan ukuran layar */
+  background-position: center; /* Menjaga agar gambar tetap di tengah */
+  height: 100vh;
+  color: #000000;
+  background-attachment: fixed; /* Menjaga gambar tetap saat halaman digulir */
+}
+
+/* Pesan sukses */
+.success-message {
+  color: #4caf50;
+  margin-top: 10px;
+}
+
+/* Pesan error */
+.error-message {
+  color: #f44336;
+  margin-top: 10px;
+}
+
+/* Kontainer login */
+.login-container {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.9; /* Menambahkan sedikit transparansi untuk efek */
+}
+
+/* Judul login */
+.login-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #3b82f6;
+  margin-bottom: 20px;
+}
+
+/* Form login */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+/* Input login */
+.login-input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Fokus input */
+.login-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+/* Responsivitas untuk perangkat lebih kecil */
+@media (max-width: 768px) {
+  .login-container {
+      padding: 20px;
+      width: 90%;
+  }
+
+  .login-title {
+      font-size: 20px;
+  }
+}

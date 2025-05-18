@@ -1,0 +1,108 @@
+/* Styling umum */
+.profile-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .profile-container {
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Foto profil */
+  .profile-picture-section {
+    align-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+  }
+  
+  .upload-label {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .upload-input {
+    display: none;
+  }
+  
+  /* Info dan Edit */
+  .info-section,
+  .edit-section {
+    text-align: left;
+  }
+  
+  .edit-input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Tombol */
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .edit-btn {
+    background-color: #007bff;
+  }
+  
+  .save-btn {
+    background-color: #28a745;
+  }
+  
+  .cancel-btn {
+    background-color: #ffc107;
+  }
+  
+  .logout-btn {
+    background-color: #dc3545;
+    margin-top: 20px;
+  }
+  
+  /* Loading dan Error */
+  .loading,
+  .error {
+    margin-top: 50px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Responsif */
+  @media (max-width: 768px) {
+    .profile-container {
+      width: 90%;
+    }
+  }
+  

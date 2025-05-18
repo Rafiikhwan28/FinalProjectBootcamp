@@ -1,0 +1,108 @@
+/* Container Utama */
+.baner-container {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #f0f4f8, #d9e2ec);
+    border-radius: 16px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+/* Slider Wrapper */
+.slider {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Slider Track */
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Slider Item */
+.slider-item {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.slider-item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.slider-item p {
+    font-size: 2rem; /* Larger font size for visibility */
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    transition: color 0.3s ease;
+}
+
+.slider-item p:hover {
+    color: #3498db; /* Highlight text on hover */
+}
+
+/* Slider Controls */
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.slider-controls button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slider-controls button:hover:not(:disabled) {
+    background-color: #2980b9;
+    transform: translateY(-3px); /* Subtle hover effect */
+}
+
+.slider-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .baner-container {
+        padding: 20px 10px;
+    }
+
+    .slider-item p {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .slider-item img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-item p {
+        font-size: 1.2rem; /* Smaller text size for mobile */
+    }
+}
